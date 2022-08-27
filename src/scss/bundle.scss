@@ -10,42 +10,51 @@
 @import './components/custom-slider.scss';
 @import './components/homepage-image-grid';
 @import './components/footer';
+@import './components/registration-form/index';
 
-
-body {
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
+::selection {
+    background: $teal;
+    color: $white;
 }
 
 .key-building-features {
-    .fl-row-content-wrap {
-        background-size: auto 84vh;
-        background-position: left bottom;
+    @media (max-width: $tablet) {
+        .fl-row-content-wrap {
+            background-image: none !important;
+            background-color: $blue;
+        }
     }
-    
 }
 
+.mobile-blue-background {
+    @media (max-width: $tablet) {
+        .fl-row-content-wrap {
+            background-image: none !important;
+            background-color: $blue;
+        }
+    }
+}
 
+.building-features-icon {
+    max-height: 45px;
+    height: 45px;
+}
 
-body:not(.fl-builder-edit) {
-    .position-relative {
-        position: relative;
+.orange-overlay-fixed-width {
+    max-width: 780px;
+    width: 100%;
+}
+
+.orange-overlay-fixed-width-inner {
+    max-width: 660px;
+    width: 100%;
+    @media (max-width: 1200px) {
+        max-width: 300px;
+        width: 80%;
     }
 
-    .photo-label {
-        position: absolute;
-        bottom: 4rem;
-        display: inline;
-        width: auto !important;
-        padding: 0.4rem 2rem;
-        background: rgba(white, 0.8);
-
-        &.right {
-            right: 0;
-        }
-
-        &.left {
-            left: 0;
-        }
+    @media (max-width: 1000px) {
+        max-width: 300px;
+        width: 80%;
     }
 }

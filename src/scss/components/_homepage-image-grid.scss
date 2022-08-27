@@ -1,47 +1,13 @@
-.page-id-2 {
-    .esg-bc.eec {
-        @media (max-width: 800px) {
-            position: relative;
-            top: 0;
-            left: 0;
-    
-            .esg-bottom {
-                position: absolute;
-                top: 3rem;
-                left: 0;
-                padding: 1.6rem;
-            }
-        }
+body:not(.fl-builder-edit) {
+    .position-relative {
+        position: relative;
     }
-    
-    body:not(.fl-builder-edit) {
-        .position-relative {
-            position: relative;
-        }
-    
-        .photo-label {
-            position: absolute;
-            bottom: 4rem;
-            display: inline;
-            width: auto !important;
-            padding: 0.4rem 2rem;
-            
-            @media (max-width: 800px) {
-                .fl-module-content {
-                    margin: 0.6rem;
-                }
-            }
-            background: rgba(white, 0.8);
-    
-            &.right {
-                right: 0;
-            }
-    
-            &.left {
-                left: 0;
-            }
-    
-            
-        }
+
+    .eg-my-custom-grid-element-2,
+    .eg-my-custom-grid-left-label-element-2 {
+        padding: 1.2vw 2.2vw;
+        font-size: clamp(14px, 1.5vw, 25px);
+        line-height: 1;
+        margin-bottom: 4rem;
     }
 }
