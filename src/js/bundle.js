@@ -4,6 +4,8 @@ import customLightbox from "./custom-lightbox";
 import suitesGridLightbox from './suites-grid-lightbox';
 import customSlider from './custom-slider';
 
+import splashPage from './splash-page';
+
 (function() {
 
     var pageIds = {
@@ -11,8 +13,7 @@ import customSlider from './custom-slider';
         home: '2',
         location: '302'
     }
-    // console.log(pageIds.suites);
-    // console.log(`body.page-id-${pageIds.suites}`);
+
 
     if(document.querySelector(`body.page-id-${pageIds.suites}`)) {
         const sgl = suitesGridLightbox();
@@ -31,9 +32,11 @@ import customSlider from './custom-slider';
 
     const fs = formStyling();
     const cl = customLightbox();
+    const sp = splashPage();
 
     fs.init();
     cl.init();
+    sp.init();
 
     document.querySelectorAll('.register-link').forEach(function(el) {
         el.addEventListener('click', function(e) {

@@ -4,6 +4,8 @@ body:not(.logged-in) #splashPage {
     left: 0;
     right: 0;
     z-index: 1000;
+    height: 100vh;
+    width: 100%;
     display: block;
 }
 
@@ -20,8 +22,10 @@ body.logged-in {
     }
     
     .fl-row-content-wrap {
-        background-size: 90%;
-        background-position: 0% 50%;
+        min-height: calc(100vh + 20px);
+        > .fl-row-content {
+            padding: 18vh 0;
+        }
     }
 }
 
@@ -36,25 +40,12 @@ body.logged-in {
 }
 
 body:not(.fl-builder-edit) .scroll-animation {
-    animation: bounce 1.8s infinite;
     animation-timing-function: ease-in-out;
     position: absolute;
     bottom: 30px;
     left: 0;
     right: 0;
     margin: auto;
-}
-
-@keyframes bounce {
-    0% {
-        transform: translateY(-15px);
-    }
-    50% {
-        transform: translateY(0);
-    }
-    100% {
-        transform: translateY(-15px);
-    }
 }
 
 body:not(.fl-builder-edit) .line-drawing-container {
@@ -68,8 +59,10 @@ body:not(.fl-builder-edit) .line-drawing-container {
 }
 
 svg#lineDrawing {
-    max-width: 1000px;
-    width: 65vw;
-    height: 60vh;
+    // max-width: 1000px;
+    width: 50vw;
+    height: 50vh;
     opacity: 0;
+    margin: 0 auto;
+    display: block;
 }

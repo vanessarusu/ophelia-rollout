@@ -23,9 +23,16 @@ function _vive_market_flats_assets() {
 function load_custom_templates() {
 
     // load splash page and lightbox if the builder is not open
-    if ( ! isset( $_GET['fl_builder'] ) ) {
-		
-    }  
+    // if ( ! isset( $_GET['fl_builder'] ) ) {
+    //     FLBuilder::render_query( array(
+    //         'post_type' => 'fl-theme-layout',
+    //         'p'         => 1402,
+    //     ) );
+    //     // FLBuilder::render_query( array(
+    //     //     'post_type' => 'fl-builder-template',
+    //     //     'p'         => 139
+    //     // ) );
+    // }  
 }
 
 function my_global_builder_posts( $post_ids ) {
