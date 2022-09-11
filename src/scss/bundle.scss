@@ -58,3 +58,11 @@
         width: 80%;
     }
 }
+
+
+body.fl-builder-edit:not(.postid-1491),
+.logged-in.admin-bar {
+    #splashPage {
+        display: none;
+    }
+}
